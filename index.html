@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TheApiList | The best api list</title>
+
+    <!-- Meta -->
+    <meta name="description" content="The best api list">
+    <meta name="theme-color" content="#34b7eb">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+
+    <!-- Icon -->
+    <link rel="icon" href="img/TheApiList.png">
+
+    <!-- Css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- ClipBoard -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha512-hDWGyh+Iy4Mr9AHOzUP2+Y0iVPn/BwxxaoSleEjH/i1o4EVTF/sh0/A1Syii8PWOae+uPr+T/KHwynoebSuAhw==" crossorigin="anonymous"></script>
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body style="background: #454647;">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background: #333333; box-shadow: 5px 5px 25px 5px rgba(0,0,0,0.58);">
+        <a class="navbar-brand" href="#">TheApiList</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="https://github.com/TheApiList">GitHub <span class="sr-only">(current)</span></a>
+            </li>
+             <li class="nav-item active">
+              <a class="nav-link" href="#">Donate</a>
+            </li>    
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Status</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 m-auto">
+                <h3 class="text-center mb-3" style="color: white; font-size: 65px;">
+                    TheApiList<br>
+                    <span style="font-size: 25px; font-family: 'Roboto Mono', monospace;">The best list of apis</span>
+                </h3>
+                <div class="form-group">
+                    <input type="text" id="search" class="form-control form-control-lg" placeholder="Search...">
+                </div>
+                <div id="match-list"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script>
+        var clipboard = new ClipboardJS('.button');
+    </script> -->
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js" integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg==" crossorigin="anonymous"></script>
+</body>
+</html>

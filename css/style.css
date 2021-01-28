@@ -1,0 +1,25 @@
+body
+{
+    background: #454647;
+}
+
+.button {
+    position: absolute;
+    top: 17%;
+    left: 90%;
+}
+
+.btn1
+{
+    left: 85%;
+}
+
+.i1
+{
+    color: #fff;
+}
+
+.i2
+{
+    color: #fff;
+}

@@ -29,9 +29,8 @@ const outputHtml = matches => {
         border: none !important;">
         <i class="fas fa-link i1"></i></button>
     <button class="button btn2" onclick="window.open('${match.github}')" style="background: transparent;
-    border: none !important;"><i class="fas fa-code i2"></i></button>
-        </div>
-        `)
+    border: none !important;"><i class="fab fa-github i2"></i></button>
+        </div>`)
         .join()
 
         matchList.innerHTML = html

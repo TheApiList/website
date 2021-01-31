@@ -7,6 +7,7 @@
     <!-- Meta -->
     <meta name="description" content="The best api list">
     <meta name="theme-color" content="#34b7eb">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -17,6 +18,7 @@
 
     <!-- Css -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/loading.css">
 
     <!-- ClipBoard -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha512-hDWGyh+Iy4Mr9AHOzUP2+Y0iVPn/BwxxaoSleEjH/i1o4EVTF/sh0/A1Syii8PWOae+uPr+T/KHwynoebSuAhw==" crossorigin="anonymous"></script>
@@ -24,12 +26,17 @@
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
 
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
     <!-- Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body style="background: #454647;">
     <nav class="navbar navbar-expand-lg navbar-dark" style="background: #333333; box-shadow: 5px 5px 25px 5px rgba(0,0,0,0.58);">
-        <a class="navbar-brand" href="#">TheApiList</a>
+      <a class="navbar-brand">    <img src="img/TheApiList.png" alt="TheApiList" style="width:40px;"></a>
+        <a class="navbar-brand" href="https://theapilist.tk/">TheApiList</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -42,10 +49,13 @@
               <a class="nav-link" href="#">Donate</a>
             </li>    
             <li class="nav-item active">
-              <a class="nav-link" href="#">Status</a>
+              <a class="nav-link" href="https://stats.uptimerobot.com/o8xQ2UX2wK">Status</a>
             </li>
             <li class="nav-item active">
               <a href="#" class="nav-link">About</a>
+            </li>
+            <li class="nav-item active">
+              <a href="https://github.com/TheApiList/data" class="nav-link">Upload</a>
             </li>
           </ul>
         </div>
@@ -66,12 +76,16 @@
         </div>
     </div>
 
-    <!-- <script>
-        var clipboard = new ClipboardJS('.button');
-    </script> -->
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
 
     <!-- Scripts -->
     <script src="js/main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js" integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg==" crossorigin="anonymous"></script>
+    <script>
+      $(window).on("load",function(){
+        $(".loader-wrapper").fadeOut("slow");
+      });
+    </script>
 </body>
 </html>

@@ -27,3 +27,12 @@ body
 i:hover {
     color: rgb(192, 192, 192);
 }
+
+.hide
+{
+    display: none;
+}
+
+.navbar-collapse.collapse.in {
+    display: block!important;
+  }

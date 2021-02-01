@@ -1,3 +1,10 @@
+/*
+* Copyright (C) 2021 TheApiList
+
+* This file is subject to the terms and conditions defined in
+* file 'LICENSE.txt', which is part of this source code package.
+*/
+
 const search = document.getElementById("search")
 const matchList = document.getElementById("match-list")
 
@@ -38,3 +45,5 @@ const outputHtml = matches => {
 }
 
 search.addEventListener('input', () => searchLib(search.value))
+
+console.log("\x1b[44m%s\x1b[0m", ' LICENSE ', 'TheApiList is under Apache 2 LICENSE')

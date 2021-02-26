@@ -37,4 +37,29 @@ i:hover {
 
 .navbar-collapse.collapse.in {
     display: block!important;
-  }
+}
+
+.badge-premium-false {
+    display: none;
+}
+
+.badge-premium-true {
+    display: inline-block;
+    color: rgb(255, 208, 0);
+}
+
+.premiumtrue:hover {
+    color: rgb(255, 208, 0);
+}
+
+.verified-false {
+    display: none;
+}
+
+.verified-true {
+    display: inline-block;
+}
+
+.verified__true:hover {
+    color: white;
+}

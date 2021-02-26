@@ -29,8 +29,8 @@ const outputHtml = matches => {
     if (matches.length > 0) {
         const html = matches.map(match => `
         <div class="card card-body mb-1" style="background: #333333; color: white; box-shadow: 5px 4px 21px 5px rgba(0,0,0,0.4);">
-        <h4>${match.title} <span class="badge badge-secondary" style="background: green; color: white;">${match.version}</span></h4>
-        <b>${match.author}</b>
+        <h4 class="title">${match.title} <div class="badge-premium-${match.premium}"><i class="fas fa-star premium${match.premium}"></i></div> <span class="badge badge-secondary" style="background: green; color: white;">${match.version}</span></h4>
+        <b>${match.author} <div class="verified verified-${match.verified}"><i class="fas fa-check-circle verified__${match.verified}"></i></div></b>
         <small>${match.description}</small>
         <button class="button btn1" onclick="window.open('${match.website}')" style="background: transparent;
         border: none !important;">

@@ -37,6 +37,8 @@ const outputHtml = matches => {
         <i class="fas fa-link i1"></i></button>
     <button class="button btn2" onclick="window.open('${match.github}')" style="background: transparent;
     border: none !important;"><i class="fab fa-github i2"></i></button>
+    <button class="button btn3" onclick="sessionStorage.setItem('favorite', '${sessionStorage.getItem('favorite')} ${match.website}<br>');" style="background: transparent;
+    border: none !important;"><i class="fas fa-plus"></i></button>
         </div>`)
         .join()
 

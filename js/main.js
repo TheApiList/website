@@ -30,8 +30,8 @@ const outputHtml = matches => {
         const html = matches.map(match => `
         <div class="card card-body mb-1" style="background: #333333; color: white; box-shadow: 5px 4px 21px 5px rgba(0,0,0,0.4);">
         <h4 class="title">${match.title} <div class="badge-premium-${match.premium}"><i class="fas fa-star premium${match.premium}"></i></div> <span class="badge badge-secondary" style="background: green; color: white;">${match.version}</span></h4>
-        <b>${match.author} <div class="verified verified-${match.verified}"><i class="fas fa-check-circle verified__${match.verified}"></i></div></b>
-        <small>${match.description}</small>
+        <b><img src="${match.authorAvatar}" class="img-fluid rounded-circle" width="32" height="32"> ${match.author} <div class="verified verified-${match.verified}"><i class="fas fa-check-circle verified__${match.verified}"></i></div></b>
+        <small>${match.description}<br><a class="moreinfo" href="api.html" onclick="sessionStorage.setItem('selectedApiTitle', '${match.title}'); sessionStorage.setItem('selectedApiDescription', '${match.description}'); sessionStorage.setItem('selectedApiAuthor', '${match.author}'); sessionStorage.setItem('selectedApiVersion', '${match.version}'); sessionStorage.setItem('selectedApiWebsite', '${match.website}'); sessionStorage.setItem('selectedApiGithub', '${match.github}'); sessionStorage.setItem('selectedApiAuthorAvatar', '${match.authorAvatar}'); sessionStorage.setItem('selectedApiPageTitle', '${match.title} | TheApiList'); sessionStorage.setItem('selectedApiIsPremium', '${match.premium}'); sessionStorage.setItem('selectedApiIsVerified', '${match.verified}');">More Information</a></small>
         <button class="button btn1" onclick="window.open('${match.website}')" style="background: transparent;
         border: none !important;">
         <i class="fas fa-link i1"></i></button>
